@@ -49,6 +49,11 @@ def draw_cloud(x, y):
     pygame.draw.ellipse(screen, GREY, [x + 35, y, 50, 50])
     pygame.draw.rect(screen, GREY, [x + 20, y + 20, 60, 40])
 
+def snowman(x, y):
+    pygame.draw.ellipse(screen, WHITE, [x, y, 20, 20])
+    pygame.draw.ellipse(screen, WHITE, [x - 5, y + 15, 30, 30])
+    pygame.draw.ellipse(screen, WHITE, [x - 10, y + 30, 40, 40])
+
 
     
 # Game loop
@@ -103,6 +108,7 @@ while not done:
     pygame.draw.rect(screen,WHITE, [0, y+30, 800, 5])
 
     '''snowman'''
+    snowman(200, 450)
 
 
     # Update screen
